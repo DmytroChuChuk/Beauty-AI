@@ -1,0 +1,128 @@
+.center {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+
+    img{
+        display: block;
+        margin: auto;
+    
+    }
+
+    div{
+        margin-top: 8px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.center-main {
+    display: table;
+    margin: 0 auto;
+    .card{
+        margin-top: 56px;
+        background-color: #ffffff ;
+    }
+}
+
+.policy-label{
+    font-size: 11px;
+    margin-left: 16px;
+    margin-right: 16px; 
+    line-height: 21px; 
+
+    a {
+        color: blue;
+    }
+}
+
+.btn-container{
+    width: 100%;
+    text-align: center;
+
+    Button {
+        width: 28%;
+        margin: 8px;
+    }
+}
+
+.logo-text {
+    display: table;
+    margin: 0 auto;
+    color: #111; font-family: 'Helvetica Neue', sans-serif; font-weight: bold; letter-spacing: -1px; line-height: 1; 
+    text-align: center; 
+}
+
+.para-text {
+    line-height: 1; 
+    display: table;
+    margin: 0 auto;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.phone-input {
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1; 
+    text-align: left; 
+}
+
+.div-code{
+    display: flex;
+    align-items: center;
+}
+
+.loading-circle {
+    width: 16px!important;
+    height: 16px!important;
+    margin-left: 8px;
+}
+
+.left-item {
+    width: 30%;
+    text-align: left; 
+}
+
+.ion-input-verify {
+    line-height: 1;
+    text-align: left;
+    border: 0;
+    padding:10px;
+    width: 80%;
+    border-radius:10px;
+}
+
+.block {
+    width: 10%;
+    display: inline-block;
+}
+
+.country-code-block {
+    width: 90%;
+    display: inline-block;
+}
+
+.bg-img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* .background-image {
+    src: "url('https://images.rentbabe.com/assets/rentblogo.svg')";
+    background-size: "contain";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: "center";
+    width: "50%";
+    height: "50%";
+} */

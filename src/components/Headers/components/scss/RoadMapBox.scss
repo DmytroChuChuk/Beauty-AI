@@ -1,0 +1,29 @@
+.box {
+    display: inline-block;
+    // background-color: aqua;
+    color: #000;
+    width: 200px;
+
+    word-wrap: break-word!important;
+    p {
+        font-size: 14px;
+    }
+    .indicator {
+        width: 12px;
+        height: 12px;
+        background-color: red;
+        opacity: 0.32;
+        border-radius: 50%;
+        
+    }
+    .select {
+        opacity: 1;
+    }
+    div {
+        display: inline-block;
+        width: 200px;
+        color: rgb(71, 71, 71);
+        word-wrap: break-word!important;
+    }
+
+} 

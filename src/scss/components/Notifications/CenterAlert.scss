@@ -1,0 +1,8 @@
+.center-alert {
+    z-index: 999;
+    position: absolute;
+    min-width: 375px;
+    top: .35rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

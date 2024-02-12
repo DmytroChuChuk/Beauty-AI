@@ -1,0 +1,39 @@
+.duration {
+    display: flex;
+    gap: 21px;
+
+    input {
+        margin-bottom: 16px;
+        height: 48px;
+    }
+
+    p {
+    
+        margin-bottom: 8px;
+    }
+}
+
+.question-icon {
+    width: 16px;
+    height: 16px;
+}
+
+#preview1{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    img{
+        max-width: 100px;
+     
+    }
+   
+}
+
+#preview2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    img{
+        max-width: 100px;
+   
+    }
+   
+}

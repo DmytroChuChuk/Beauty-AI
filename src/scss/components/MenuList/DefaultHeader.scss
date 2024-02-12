@@ -1,0 +1,14 @@
+@import '../../abstract/common';
+@import "../../abstract//variables";
+.top-logo-content{
+
+    
+    h2{
+        display: flex;
+        font-size: larger;
+        justify-content: left;
+        align-items: center;
+        cursor: pointer;
+    }
+
+}

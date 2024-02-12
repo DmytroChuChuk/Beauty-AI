@@ -1,0 +1,3 @@
+export const TOD_PROFILES_IMAGES = "TOD_PROFILES_IMAGES"
+export const MOBILE = "MOBILE"
+export const VERIFICATION = "VERIFICATION"

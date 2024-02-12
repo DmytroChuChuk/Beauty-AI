@@ -1,0 +1,71 @@
+@import '../../abstract/common';
+@import "../../abstract//variables";
+
+@mixin basic-button {
+    min-width: 70px;
+    border-radius: 9999px;
+    @include padding;
+}
+
+.login-button {
+    @include flex-center;
+    @include basic-button;
+    border: 1px solid #CCCCCC;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 83px;
+    height: 48px;
+
+
+    margin-right: 34px;
+}
+
+.login-button-mobile {
+    @include flex-center;
+    @include basic-button;
+    border: 1px solid #CCCCCC;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    width: 50%;
+    height: 48px;
+}
+
+.signup-button{
+    @include flex-center;
+    @include basic-button;
+    background-color: red!important;
+    color: white;
+    font-weight: 600;
+    height: 36px;
+
+    cursor: pointer;
+}
+
+.babe-button{
+    @include flex-center;
+    @include basic-button;
+    background: #000;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
+    height: 44px;
+    gap:8px;
+    min-width: 140px;
+}
+.subscribe-button{
+    @include flex-center;
+    @include basic-button;
+    
+    cursor: pointer;
+    display: flex;
+    flex-grow: 1;
+
+    min-width: 140px;
+    justify-content: center;
+    align-items: center;
+}
+

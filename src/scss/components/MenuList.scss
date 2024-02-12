@@ -1,0 +1,87 @@
+.signout-btn{
+    // margin: 8px!important;
+    background-color: red!important;
+}
+
+
+.circle-img {
+    border-radius: 50%;
+    border:1px solid whitesmoke;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.btm-wrapper{
+
+    display: flex;
+
+    .btm-container{
+
+        p {
+            color: darkgray;
+            width: 100%;
+            // margin-bottom: 16px;
+        }
+    
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+    }
+
+    .version {
+        flex-grow: 1;
+        font-size: 12px;
+        font-weight: 400;
+        color: #999999;
+    
+        p {
+            text-align: left;
+            line-height: 16px;
+        }
+
+    }
+}
+.signin-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.signed-button{
+    display: flex;
+    flex-grow:1 ;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+.signout{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+
+.section-2-container {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.coin {
+    width: 28px;
+    height : 28px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile-menu-popover{
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 16px;
+}
+.menu-list {
+    padding-left: 1em;
+    padding-right: 1em;
+}

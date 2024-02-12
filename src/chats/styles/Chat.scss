@@ -1,0 +1,124 @@
+@import '../../scss/abstract/variables';
+@import '../../scss/abstract/common';
+
+
+.chatbox{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 900;
+  background-color: white;
+}
+
+.msger-inputarea {
+
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    font-family: Sans-serif;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0 1em 1.4em 1em;
+    background-color: rgba(239, 239, 239, 0.86);
+    margin-top: auto;
+    border-top: 1px solid #e6e6e6;
+    
+  }
+
+  .msg-send-button{
+
+    border-radius: 50%!important; 
+    min-width: 3em!important;
+    min-height: 3em!important;;
+    width: 3em!important;;
+    height: 3em!important;; 
+    margin-top: auto!important;
+    box-shadow: none!important;
+
+  }
+
+  .msger-input {
+
+    border-radius: 1em;
+    background-color: white;
+
+    margin-right: .5em;
+    margin-left: .5em;
+    width: 100%;
+    
+    border: none;
+    outline: 0;
+
+    font-family: sans-serif;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    padding: .7em 1em .7em 1em;
+    resize: none;
+    margin-top: auto;
+
+    overflow: hidden;
+
+    font-size: medium;
+
+    height: auto;
+    min-height: 42px;
+    max-height: 150px;
+
+
+  }
+
+
+  .center-it {
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+  .white-background {
+    background-color: white;
+  }
+  .chat-box-background-image{
+    background-image: $background-image;
+  }
+
+  .chat-box-background {
+    width: 100%;
+  }
+
+  #scroll-view{
+    margin-top: 0.5em;
+    width: 100%;
+    -webkit-overflow-scrolling:touch;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .no-conversation {
+    @include flex-center;
+    position: relative;
+    height: 80vh;
+
+    div{
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 200px;
+      }
+
+      p{
+        margin-top: 16px;
+      }
+    }
+  }

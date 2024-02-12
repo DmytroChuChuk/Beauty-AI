@@ -1,0 +1,61 @@
+@import '../../../scss/abstract/variables';
+
+
+.app-bar-profile-wrapper{
+    width: $profile-size;
+    height: $profile-size;
+
+    cursor: pointer;
+    position: relative;
+
+    .menu {
+      position: absolute;
+      // bottom: 0.5em;
+      // left: 100%;   
+      z-index: 1000;
+      width: $profile-size;
+      height: $profile-size;
+      border-radius: 50%;
+     
+      
+    }
+    .menu-icon {
+      object-fit: cover;
+      object-position: center;
+      height: 16px;
+      width:16px;
+      
+    }
+    
+    .profile-avatar{
+      height: 44px;
+      width: 44px;
+    }
+
+    .profile {
+      object-fit: cover;
+      object-position: center;
+      height: $profile-size;
+      width: $profile-size;
+      min-height: 36px;
+      min-width:  36px;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .profile-menu {
+      object-fit: cover;
+      object-position: center;
+      height: 36px;
+      width:36px;
+      border-radius: 50%;
+     
+     
+    }
+    .profile-menu-icon {
+      height: 12px;
+      width:12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }

@@ -1,0 +1,12 @@
+.telegram-alert {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+
+    .alert {
+        min-width: 350px;
+        max-width: 600px!important;
+    }
+}

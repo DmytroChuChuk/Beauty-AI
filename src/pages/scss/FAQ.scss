@@ -1,0 +1,23 @@
+.list {
+    padding: 16px;
+
+    div{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 1000px ;
+        width: 100%;
+    }
+
+    label{
+        
+        font-weight: bolder;
+    }
+}
+
+.select-container{
+  
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

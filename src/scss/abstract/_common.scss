@@ -1,0 +1,48 @@
+@import './variables';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin abs-full-screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@mixin fixed-full-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@mixin orange-btn {
+    background-color: $rentbOrange;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+@mixin padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+  @mixin float-y-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    overflow-y: scroll;
+    background-color: #fff;
+  }

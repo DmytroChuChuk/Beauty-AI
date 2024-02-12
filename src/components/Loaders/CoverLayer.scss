@@ -1,0 +1,40 @@
+@import '../../scss/abstract/common';
+
+.main-cover{
+
+    @include fixed-full-screen;
+    @include flex-center;
+    z-index: 999;
+    width: 100%;
+
+    touch-action: none;
+    background-color: darkslategray;
+    flex-direction: column;
+
+    label {
+        z-index: 1;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        padding: 16px;
+        max-width: 500px;
+    }
+
+    ul{
+        
+        li{
+      
+            color: white;
+            list-style: circle;
+        }
+    }
+
+    .main-buttons{
+        @include flex-center;
+        button{
+            margin-left: 16px;
+
+        }
+    }
+}
+

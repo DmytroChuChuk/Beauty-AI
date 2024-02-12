@@ -1,0 +1,51 @@
+.closeDialog{
+    float: right;
+    cursor: pointer;
+}
+
+.review-div{
+    
+    // position: relative;
+    min-height: 120px;
+    .comments::first-letter{
+      text-transform:capitalize
+    }
+}
+
+#review-form{
+    font-weight: bold;
+    // height: 500px;
+    position: relative;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.review-scroll{
+    overflow-y: scroll;
+    overflow-x: none;
+    // height: 500px;
+}
+
+
+.feedback-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    
+}
+
+.feedback-footer {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.feedback-end {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    cursor: pointer;
+}

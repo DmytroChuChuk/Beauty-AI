@@ -1,0 +1,206 @@
+// :root {
+//   --max-duration: 15s;
+// }
+:root {
+    --progress-width: 0;
+  }
+  
+  .audio-recorder {
+    // padding: 30px;
+    // background-color: #12181f;
+    // border-radius: 1rem;
+    //   background-color:#ffa928;
+    color: #ffffff;
+    .actions {
+    //   display: flex;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+  
+      .btn {
+        height: 48px;
+        // padding: 20px;
+        border-radius: 30px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #222a37;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        @media (max-width: 640px) {
+          padding: 14px 20px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+  
+      .player-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .btn-play {
+          display: flex;
+          align-items: center;
+          border-radius: 30px;
+          height: 48px;
+          width: 100%;
+          font-size: 20px;
+          font-weight: 600;
+          position: relative;
+          overflow: hidden;
+          border: none;
+          background-color: #222a37;
+          margin-right: 10px;
+          color: #ffffff;
+          .voice-numb {
+            position: absolute;
+            right: 0;
+            font-size: 16px;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .audio-timer {
+            height: 100%;
+            // cursor: pointer;
+            border-radius: 30px;
+            border: none;
+            color: #ffffff;
+
+            font-weight: 500;
+            background: darkviolet;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+  
+            &:hover {
+              transition: all 0.3s linear 0s;
+              background: rgba(177, 22, 243, 0.5);
+            }
+            .play-icon {
+              position: absolute;
+              height: 40px;
+              width: 40px;
+              left: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+  
+            .voice-numb1 {
+              padding: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              width: 100%;
+              font-size: 16px;
+              margin-left: 21px;
+            }
+          }
+        }
+        .btn-stop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 48px;
+          width: 48px;
+          min-width: 48px;
+          min-height: 48px;
+          border-radius: 50%;
+          cursor: pointer;
+          background-color: #222a37;
+          border: none;
+          outline: none;
+          @media (max-width: 640px) {
+            height: 46px;
+            width: 46px;
+            svg {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+        .btn-close {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 48px;
+          width: 48px;
+          min-width: 48px;
+          min-height: 48px;
+          border-radius: 99999999px;
+          cursor: pointer;
+          background-color: #222a37;
+          border: none;
+          outline: none;
+        //   @media (max-width: 640px) {
+        //     height: 46px;
+        //     width: 46px;
+        //     svg {
+        //       height: 20px;
+        //       width: 20px;
+        //     }
+        //   }
+        }
+      }
+      .recoding-file-side {
+        display: flex;
+        width: 100%;
+        .btn {
+          width: 100%;
+          margin-right: 10px;
+        }
+      }
+      .uploading-file-side {
+        display: flex;
+        width: 100%;
+        .select-file {
+          display: none;
+        }
+      }
+    }
+    .place-holder {
+      color: rgba(255, 0, 0, 0.833);
+      padding: 0 12px;
+    }
+  }
+  
+  // @keyframes progress-bar-animation {
+  //   from {
+  //     width: 0;
+  //   }
+  //   to {
+  //     width: var(--progress-width, 100%);
+  //   }
+  // }
+  :root {
+    --animation-duration: 0.2s; /* Add this variable for animation duration */
+  }
+  
+  @keyframes progress-bar-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .start-animation .audio-timer {
+    animation: progress-bar-animation var(--animation-duration) linear forwards;
+  }
+  
+  // .start-animation .audio-timer {
+  //   animation: progress-bar-animation var(--animation-duration) linear forwards;
+  // }
+  
+  // .start-animation {
+  //   animation: progress-bar-animation var(--animation-duration) linear forwards;
+  // }
+  

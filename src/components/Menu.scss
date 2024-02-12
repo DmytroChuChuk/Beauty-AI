@@ -1,0 +1,71 @@
+@import '../scss/abstract/variables';
+
+.resize-button-text {
+  font-size: 3.2vw!important;
+}
+
+.app-bar{
+  div{
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  }
+}
+.top-logo-content {
+    display:flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    align-items: center; 
+  }
+
+  .top-logo-content-header{
+    display: flex;
+  }
+  
+  .top-logo-content > b{
+    margin-left: 8px;
+  }
+  
+  .top-logo-content > img{
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+  }
+
+  .tab-button {
+    cursor: pointer;
+  }
+
+  .margin-left {
+    margin-left: 24px;
+  }
+
+  .end-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 12px;
+  }
+
+
+  .img-click {
+    float: left;
+    margin-left: 1em!important;
+    padding: 0.1em  0.1em  0.1em  0.1em;
+    margin-right: 0.8em!important;
+    position: relative;
+  }  
+
+  .nav-header{
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .chat-btn {
+    cursor: pointer;
+  }
+  .right-side-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 6px; 
+    align-items: center;
+}

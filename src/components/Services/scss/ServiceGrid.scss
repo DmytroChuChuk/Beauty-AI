@@ -1,0 +1,26 @@
+.service-grid-main{
+
+    .service-grid-wrapper {
+        display: flex;
+        align-items: center;
+        border-radius: .5rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+
+    .footer{
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        .service-grid-wrapper:hover{
+            background-color: #e6e6e6;
+        }
+    }
+}
+

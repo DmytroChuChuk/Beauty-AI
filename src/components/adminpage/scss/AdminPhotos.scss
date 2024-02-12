@@ -1,0 +1,43 @@
+.update-btn{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 10px;
+	color: transparent;
+}  
+
+.profile-div{
+	display: block;
+	position: relative;
+	background-color:white;
+	margin-bottom: 32px;
+	border-radius: 1rem;
+	width: 100%;  
+	height: 150px;
+
+}
+
+.circle-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: rgba(74,128,247,1);
+	color: white;
+	border-radius: 50%;
+	left: 0.5em;
+	top: 0.5em;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.profile-img{
+    object-fit: cover;
+	object-position: center;
+	height: 100%;
+	width: 100%;
+	border-radius: .5em;
+	border: 1px solid gainsboro;
+}

@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "prod": "rent-a-date-81735",
+    "figma": "figma-ebuddy",
+    "wise-dev": "wise-dev-9300e",
+    "default": "rb-dev-819c4"
+  },
+  "targets": {},
+  "etags": {}
+}

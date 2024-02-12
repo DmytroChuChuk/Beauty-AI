@@ -1,0 +1,62 @@
+.intro-background {
+  width: 100vw;
+  height: "100%";
+  background: rgb(255, 248, 232);
+}
+.intro-heading-main {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.intro-heading-sub {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+.intro-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: "space-between";
+}
+.description-heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+.review-heading-rejected {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e32d2d;
+}
+.review-description-rejected {
+  font-size: 10px;
+  font-weight: 400;
+  color: #646464;
+}
+.why-icon {
+  width: 42px;
+  height: 42px;
+  background-color: "#F0F0F0";
+  border-radius: "50%";
+}
+.who-are-we-heading {
+  font-size: 14px;
+  margin-left: 4px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.description-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #646464;
+}
+.description-div{
+    display: flex;
+    flex-direction:row;
+    gap: 0.2rem;
+}
+.main-heading {
+  font-size: 24;
+  font-weight: 700;
+  color: #1a1a1a;
+}

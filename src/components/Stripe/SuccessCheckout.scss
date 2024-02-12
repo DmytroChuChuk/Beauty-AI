@@ -1,0 +1,17 @@
+.new-line {
+   white-space: pre-wrap;
+ 
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        margin-bottom: 8px;
+    }
+}

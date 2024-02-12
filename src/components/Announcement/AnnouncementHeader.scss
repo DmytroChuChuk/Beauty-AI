@@ -1,0 +1,141 @@
+@import '../../scss/abstract/variables';
+$color : white;// rgb(241, 241, 241);
+
+
+@mixin flex-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+
+/* CSS talk bubble */
+.talk-bubble {
+	margin-top: 24px;
+    margin-bottom: 8px;
+    display: inline-block;
+    position: relative;
+	width: 280px;
+    min-height: 200px;
+	height: auto;
+	background-color: $color;
+    padding: 8px;
+
+    label {
+        width: 100%;
+        display: inline-block;
+        padding-left: 16px;
+        margin-bottom: 4px;
+    }
+}
+
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -20px;
+	right: auto;
+    top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: $color $color transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    font-size: 14px;
+
+    white-space: pre-line;
+}
+// f92036
+// f92036 27
+.wrapper {
+    @include flex-center();
+    background: $rentb-background;
+    margin-bottom: 2rem;
+    .loading {
+
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 19px!important;
+        height: 19px!important;
+    }
+
+    .background {
+        position: absolute; 
+        z-index: 0;
+        width: 350px;
+        height: 400px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 24px;
+        border-radius: 16px;
+        background: white;
+    }
+}
+
+.apply-wrapper {
+    @include flex-center();
+
+    margin-bottom: 16px;
+    padding-top: 8px;
+    z-index: 1;
+
+    .apply-btn {
+        color: white;
+        background-color: green;
+    }
+
+    .remove-btn {
+        color: white;
+        background-color: red;
+        margin-left: 16px;
+    }
+
+
+
+    textarea{
+        padding: 8px;
+        width: 100%;
+    }
+}
+
+.apply-label {
+    position: relative;
+    color: black;
+    width: 100%;
+}
+
+.announcement-wrapper{
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+   
+}

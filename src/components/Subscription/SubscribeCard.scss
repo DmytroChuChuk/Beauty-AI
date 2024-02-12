@@ -1,0 +1,104 @@
+@import '../../scss/abstract/variables';
+
+.root{
+ 
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.add-border {
+  border: 1px solid $rentbBlue;
+}
+
+.bullet {
+    display: inline-block;
+    margin: 0 2px;
+    transform: scale(0.8);
+}
+
+.title {
+    font-size: 14,
+}
+
+.line {
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: #e1f1ff;
+ 
+}
+
+.card-btn {
+  width: 90%;
+  margin-top: 1em!important;
+  margin-bottom: 1em!important;
+}
+
+.banner{
+
+    background-color: #2196f3;
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: -0.4em;
+    z-index: 999;
+    font-size: 12px;
+    border-radius: 9999px;
+    font-weight: 600;
+    width: 85%;
+    text-align: center;
+}
+
+.card-form {
+    // background-color: white!important;
+    display: inline-block;
+    padding: 16px;
+    width: 100%;
+    border-radius: 1rem;
+    background: whitesmoke;
+    text-align: center;
+
+    Button {
+        width: 100%;
+        background: yellowgreen!important;
+    }
+
+    label {
+        color: #6b7c93;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+      }
+
+      input,
+    .StripeElement {
+      display: block;
+      margin: 10px 0 20px 0;
+      max-width: 500px;
+      padding: 10px 14px;
+      font-size: 1em;
+      font-family: 'Source Code Pro', monospace;
+      box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+      border: 0;
+      outline: 0;
+      border-radius: 4px;
+      background: white;
+    }
+
+    input::placeholder {
+      color: #aab7c4;
+    }
+
+    input:focus,
+    .StripeElement--focus {
+      box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px, rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+      -webkit-transition: all 150ms ease;
+      transition: all 150ms ease;
+    }
+
+    .StripeElement.IdealBankElement,
+    .StripeElement.PaymentRequestButton {
+      padding: 0;
+    }
+
+}

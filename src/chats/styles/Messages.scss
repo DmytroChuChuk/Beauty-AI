@@ -1,0 +1,233 @@
+@mixin basic-info {
+
+	font-size: 0.4em;
+	position: absolute;
+	bottom: 0;
+	opacity: 1;
+	z-index: 999;
+
+	color: #000000!important;
+}
+
+$spacing-info: -5em;
+
+@media only screen and (max-width: 500px){
+    /* CSS apply on width between 0 and 500px */
+	.chat-bubble.nosidebar{
+		max-width: 80vw;
+
+	}
+	.wrapper-helper.nosidebar{
+		max-width: 80vw;
+		.buttons.nosidebar{
+			max-width: 80vw;
+		}
+	}
+	.chat-bubble.sidebar{
+		max-width: 80vw;
+
+	}
+	.wrapper-helper.sidebar{
+		max-width: 80vw;
+		.buttons.sidebar{
+			max-width: 80vw;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px){
+    /* CSS apply on width between 501px and 800px */
+	.chat-bubble.nosidebar{
+		max-width: 80vw;
+
+	}
+	.wrapper-helper.nosidebar{
+		max-width: 80vw;
+		.buttons.nosidebar{
+			max-width: 80vw;
+		}
+	}
+	
+	.chat-bubble.sidebar{
+		max-width: 40vw;
+	}
+	.wrapper-helper.sidebar{
+		max-width: 40vw;
+		.buttons.sidebar{
+			max-width: 40vw;
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 801px){
+    /* CSS apply on width between 801px and 1000px */
+	.chat-bubble.nosidebar{
+		max-width: 90vw;
+
+	}
+	.wrapper-helper.nosidebar{
+		max-width: 90vw;
+		.buttons.nosidebar{
+			max-width: 90vw;
+		}
+	}
+	.chat-bubble.sidebar{
+		max-width: 50vw;
+
+	}
+	.wrapper-helper.sidebar{
+		max-width: 50vw;
+		.buttons.sidebar{
+			max-width: 50vw;
+		}
+	}
+	
+}
+
+@media only screen and (min-width: 1001px){
+    /* CSS apply on width between 501px and 1000px */
+	.chat-bubble.nosidebar{
+		max-width: 80vw;
+
+	}
+	.wrapper-helper.nosidebar{
+		max-width: 80vw;
+		.buttons.nosidebar{
+			max-width: 80vw;
+		}
+	}
+	.chat-bubble.sidebar{
+		max-width: 55vw;
+
+	}
+	.wrapper-helper.sidebar{
+		max-width: 55vw;
+		.buttons.sidebar{
+			max-width: 55vw;
+		}
+	}
+}
+
+.chat-bubble-wrapper{
+	padding: .35em .35em .15em .35em;
+	display: flex;
+	transform: scaleY(-1);
+}
+
+
+.chat-bubble-wrapper.isMine {
+	justify-content: flex-end;
+}
+
+.chat-bubble {
+	
+	border-radius: 1em;
+	padding: 0.5em 2em 0.5em  0.75em;
+	margin: .2em 0.0625em .2em 0.0625em;
+    font-size: medium;
+	position: relative;
+
+	.msg{
+		word-break: break-word;
+	}
+
+	.bubble-img {
+
+		margin-bottom: .5rem;
+		border-radius: .5rem;
+		max-width: 100%;
+		background-color: #ffffff!important;
+		cursor: pointer;
+		img{
+			width: 60%;
+		}
+		
+	}
+
+	.break-all {
+		word-break: break-all
+	}
+
+	.timing-sender {
+		
+		@include basic-info;
+		right: $spacing-info;
+	}		
+
+	.timing-recipient {
+
+		@include basic-info;
+
+		left: $spacing-info;
+	}
+
+
+	.read {
+	
+		position: absolute;
+		bottom: 2em;
+		right: 0;
+
+	}
+
+	.update-message{
+		font-style: italic;
+		font-size: 14px;
+		text-align: center;
+	}
+
+}
+
+.bubble-button-sender {
+    align-self: flex-start;
+	color: #fff!important;
+	background-color: cornflowerblue!important;
+
+}
+
+.bubble-button-recipient {
+    align-self: flex-end;
+	color: #000!important;
+	background-color: #efefef!important;
+}
+
+.chat-bubble.sender {
+    align-self: flex-start;
+	background-color: cornflowerblue!important;
+	color: #ffffff!important;
+    border-bottom-left-radius: 0.1em;
+}
+
+.chat-bubble.recipient {
+    align-self: flex-end;
+	margin-left: auto;
+	background-color: #efefef!important;
+    color: #000!important;
+    border-bottom-right-radius: 0.1em;
+}
+
+.warning-bubble {
+	background-color: rgb(252, 252, 142)!important;
+	color: rgb(34, 34, 34)!important;
+	padding: 1em;
+	margin: 1em auto 1em auto;
+	width: 50%;
+	min-width: 20em;
+	font-weight: 600;
+	font-size: smaller;
+	border-radius: 1em;
+}
+
+.verified-info{
+	font-size: 11px;
+}
+.verified-info.isMine{
+	margin-left: auto;
+}
+
+.verified-info.isMine {
+	float: right;
+	margin-left: auto;
+
+}

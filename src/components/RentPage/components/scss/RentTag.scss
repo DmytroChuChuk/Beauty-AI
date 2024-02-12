@@ -1,0 +1,75 @@
+
+$tag-background: linear-gradient(28deg, #fff133 0%, #ffcc33  30%, #f3c22f  50%, #ffd145  85%, #ffd145 100%);
+
+$tri-size: 8px;
+$tri-small-height: 21px;
+$tri-big-height: 38px;
+
+@mixin tri-small {
+    position: absolute;
+    right: -$tri-size;
+    top: 0;
+    width: $tri-size;
+    height: $tri-small-height;
+    border-right: $tri-size solid transparent;
+}
+
+@mixin tri-big {
+    position: absolute;
+    right: -$tri-size;
+    top: 0;
+    width: $tri-size;
+    height: $tri-big-height;
+    border-right: $tri-size solid transparent;
+}
+
+// .tag.top{
+//     position: absolute;  
+//     z-index: 10;
+//     bottom: 24px;
+//     left: 0px;
+//     width: 60px;
+//     height: 21px
+// }
+
+.tag.default{
+    //position: absolute;  
+    z-index: 10;
+    left: 0;
+    padding: 0px 16px;
+    //width: 60%;
+    min-width: 70px;
+    max-width: 200px;
+    //height: $tri-big-height;
+
+    background: $tag-background;
+}
+
+.tag.default.small{
+    top: 2px;
+    height: $tri-small-height;
+
+}
+
+.tag.default.normal{
+
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: $tri-big-height;
+    bottom: 0;
+
+}
+
+
+.tag {
+    .tri-arrow-small {
+        @include tri-small();
+        border-top: $tri-small-height solid #ffd145;
+    }
+
+    .tri-arrow-normal {
+        @include tri-big();
+        border-top: $tri-big-height solid #ffd145;
+    }
+
+}

@@ -1,0 +1,1 @@
+export const bindPhoneNumberLimit = 5700;
